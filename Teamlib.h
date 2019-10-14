@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <WebKit/WebKit.h>
+#import "RequestApi.h"
 
-@interface Teamlib : NSObject
--(void)hellolib;
+@protocol TeamLibDelegate <NSObject>
+
+-(void)top:(UIView *)view;
+
+@end
+
+@interface Teamlib : UIViewController
+-(void)top;
+@property(nonatomic,strong)id<TeamLibDelegate> delegate;
 @end
