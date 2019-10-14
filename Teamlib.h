@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <WebKit/WebKit.h>
-#import "RequestApi.h"
 
 @protocol TeamLibDelegate <NSObject>
 
